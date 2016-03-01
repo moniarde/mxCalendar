@@ -84,8 +84,8 @@ Ext.extend(mxcCore.grid.calendars,MODx.grid.Grid,{
 		this.addContextMenuItem(m);
 		return true;
 	},updateCal: function(btn,e) {
-		if (!this.updateCatWindow) {
-			this.updateCatWindow = MODx.load({
+		if (!this.updateCalWindow) {
+			this.updateCalWindow = MODx.load({
 				xtype: 'mxcalendars-window-calendar-update'
 				,record: this.menu.record
 				,listeners: {
@@ -93,9 +93,9 @@ Ext.extend(mxcCore.grid.calendars,MODx.grid.Grid,{
 				}
 			});
 		} else {
-			this.updateCatWindow.setValues(this.menu.record);
+			this.updateCalWindow.setValues(this.menu.record);
 		}
-		this.updateCatWindow.show(e.target);
+		this.updateCalWindow.show(e.target);
 	},removeCal: function() {
 		MODx.msg.confirm({
 		    title: _('mxcalendars.cateogry_remove_title')
@@ -134,12 +134,12 @@ Ext.reg('mxcalendars-grid-calendars',mxcCore.grid.calendars);
 //---------------------------------------//
 //-- Create the Update Calendar Window --//
 //---------------------------------------//
-mxcCore.window.UpdateCat = function(config) {
+mxcCore.window.UpdateCal = function(config) {
     config = config || {};
     Ext.applyIf(config,{
-        title: ''+_('mxcalendars.label_window_create')
+        title: ''+_('mxcalendars.label_window_create_cal')
         ,url: mxcCore.config.connectorUrl
-        ,width: 'auto'
+        ,width: 500
         ,baseParams: {
             action: 'mgr/calendar/update'
         }
@@ -155,10 +155,10 @@ mxcCore.window.UpdateCat = function(config) {
             ,value: 1
         }]
     });
-    mxcCore.window.UpdateCat.superclass.constructor.call(this,config);
+    mxcCore.window.UpdateCal.superclass.constructor.call(this,config);
 };
-Ext.extend(mxcCore.window.UpdateCat,MODx.Window);
-Ext.reg('mxcalendars-window-calendar-update',mxcCore.window.UpdateCat);
+Ext.extend(mxcCore.window.UpdateCal,MODx.Window);
+Ext.reg('mxcalendars-window-calendar-update',mxcCore.window.UpdateCal);
 
 
 //-------------------------------------------//
@@ -167,7 +167,7 @@ Ext.reg('mxcalendars-window-calendar-update',mxcCore.window.UpdateCat);
 mxcCore.window.CreateCal = function(config) {
     config = config || {};
     Ext.applyIf(config,{
-        title: ''+_('mxcalendars.label_window_create')
+        title: ''+_('mxcalendars.label_window_create_cal')
         ,url: mxcCore.config.connectorUrl
         ,width: 'auto'
         ,baseParams: {
