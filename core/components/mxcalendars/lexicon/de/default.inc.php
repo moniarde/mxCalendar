@@ -109,6 +109,8 @@ $_lang['mxcalendars.tip_repeaton'] = 'wiederholen jede ___ (Tage|Wochen|Monate|J
 //-- Category Management
 $_lang['mxcalendars.category_desc'] = 'Verwalten Sie die Kategorien, die jedem Kalenderereignis zugewiesen werden sollen / können. Sie können auch Farben für den Vordergrund / den Hintergrund jeder Kategorie wählen.';
 $_lang['mxcalendars.label_window_create'] = 'Neue Kategorie erstellen';
+$_lang['mxcalendars.label_window_create_cal'] = 'Neue Kalender erstellen';
+$_lang['mxcalendars.label_window_create_cat'] = 'Neue Kategorie erstellen';
 $_lang['mxcalendars.category_name_col_label'] = 'Name';
 $_lang['mxcalendars.category_isdefault_col_label'] = 'Ist Standard';
 $_lang['mxcalendars.category_foregroundcss_col_label'] = 'Text Farbe';
