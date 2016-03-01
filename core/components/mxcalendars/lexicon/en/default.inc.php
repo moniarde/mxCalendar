@@ -134,6 +134,8 @@ $_lang['mxcalendars.label_content'] = 'Content';
 //-- Category Management
 $_lang['mxcalendars.category_desc'] = 'Manage the categories that each calendar item could be assigned to. You can also create custom colors for the foreground and background of each category.';
 $_lang['mxcalendars.label_window_create'] = 'Create New Category';
+$_lang['mxcalendars.label_window_create_cal'] = 'Create New Calendar';
+$_lang['mxcalendars.label_window_create_cat'] = 'Create New Category';
 $_lang['mxcalendars.category_name_col_label'] = 'Name';
 $_lang['mxcalendars.category_isdefault_col_label'] = 'Is Default';
 $_lang['mxcalendars.category_foregroundcss_col_label'] = 'Text Color';
