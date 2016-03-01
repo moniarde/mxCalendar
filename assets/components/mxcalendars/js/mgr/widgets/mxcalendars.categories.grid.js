@@ -128,9 +128,9 @@ Ext.reg('mxcalendars-grid-categories',mxcCore.grid.categories);
 mxcCore.window.UpdateCat = function(config) {
     config = config || {};
     Ext.applyIf(config,{
-        title: ''+_('mxcalendars.label_window_create')
+        title: ''+_('mxcalendars.label_window_create_cat')
         ,url: mxcCore.config.connectorUrl
-        ,width: 'auto'
+        ,width: 500
         ,baseParams: {
             action: 'mgr/category/update'
         }
@@ -209,9 +209,9 @@ Ext.reg('mxcalendars-window-category-update',mxcCore.window.UpdateCat);
 mxcCore.window.CreateCat = function(config) {
     config = config || {};
     Ext.applyIf(config,{
-        title: ''+_('mxcalendars.label_window_create')
+        title: ''+_('mxcalendars.label_window_create_cat')
         ,url: mxcCore.config.connectorUrl
-        ,width: 'auto'
+        ,width: 500
         ,baseParams: {
             action: 'mgr/category/create'
         }
