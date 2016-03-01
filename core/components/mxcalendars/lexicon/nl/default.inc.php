@@ -118,6 +118,8 @@ $_lang['mxcalendars.tip_repeaton'] = 'Herhaal elke ___ (dagen|weken|maanden|jare
 //-- Category Management
 $_lang['mxcalendars.category_desc'] = 'Beheer de categorieën waar elk agendapunt aan gekoppeld kan worden. Voor elke categorie is een voor- en achtergrond kleur in te stellen';
 $_lang['mxcalendars.label_window_create'] = 'Maak een nieuwe categorie';
+$_lang['mxcalendars.label_window_create_cal'] = 'Maak een nieuwe Agenda';
+$_lang['mxcalendars.label_window_create_cat'] = 'Maak een nieuwe Categorie';
 $_lang['mxcalendars.category_name_col_label'] = 'Naam';
 $_lang['mxcalendars.category_isdefault_col_label'] = 'Is standaard';
 $_lang['mxcalendars.category_foregroundcss_col_label'] = 'Tekst kleur';
