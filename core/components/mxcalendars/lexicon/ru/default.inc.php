@@ -134,6 +134,8 @@ $_lang['mxcalendars.label_content'] = 'Контент';
 //-- Category Management
 $_lang['mxcalendars.category_desc'] = 'Управление категориями событий. Каждая категория может иметь собственные цвета.';
 $_lang['mxcalendars.label_window_create'] = 'Создать новую категорию';
+$_lang['mxcalendars.label_window_create_cal'] = 'Создать новую календарь';
+$_lang['mxcalendars.label_window_create_cat'] = 'Создать новую категорию';
 $_lang['mxcalendars.category_name_col_label'] = 'Название';
 $_lang['mxcalendars.category_isdefault_col_label'] = 'Является категорией по умолчанию';
 $_lang['mxcalendars.category_foregroundcss_col_label'] = 'Цвет текста';
